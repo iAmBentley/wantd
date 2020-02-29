@@ -3,7 +3,7 @@
 		<div class="flex items-center justify-between h-16">
 			<div class="flex items-center">
 				<div class="flex-shrink-0">
-					<img class="w-36" src="{{ asset('images/wantd.svg') }}" alt="" />
+					<img class="w-24" src="{{ asset('images/wantd.svg') }}" alt="" />
 				</div>
 			</div>
 			<div class="hidden md:block">
