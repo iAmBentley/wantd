@@ -8,10 +8,10 @@
 			</div>
 			<div class="hidden md:block">
 				<div class="ml-4 flex items-center md:ml-6">
-					<a href="#"
-						class="px-3 py-2 rounded-md text-sm font-medium text-gray-800 bg-gray-200 focus:outline-none focus:text-gray-800 focus:bg-gray-700">Dashboard</a>
-					<a href="#"
-						class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-800 hover:text-gray-700 hover:bg-gray-200 focus:outline-none focus:text-gray-800 focus:bg-gray-700">Items</a>
+					<a href="{{ route('dashboard') }}"
+						class="{{ (request()->segment(1) == 'dashboard') ? 'bg-gray-200' : '' }} px-3 py-2 rounded-md text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:text-gray-800 focus:bg-gray-700">Dashboard</a>
+					<a href="{{ route('items.index') }}"
+						class="{{ (request()->segment(1) == 'items') ? 'bg-gray-200' : '' }} ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-800 hover:text-gray-700 hover:bg-gray-200 focus:outline-none focus:text-gray-800 focus:bg-gray-700">Items</a>
 					<a href="#"
 						class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-800 hover:text-gray-700 hover:bg-gray-200 focus:outline-none focus:text-gray-800 focus:bg-gray-700">Groups</a>
 					<a href="#"

@@ -18,6 +18,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::middleware(['web'])->group(function () {
-	// DASHBOARD ROUTE
+	// DASHBOARD ROUTES
 	Route::get('dashboard', 'DashboardController@index')->name('dashboard');
+	// ITEM ROUTES
+	Route::resource('items', 'ItemController');
 });
