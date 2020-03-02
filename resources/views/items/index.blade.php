@@ -41,14 +41,17 @@
 								<a href="#" class="block py-2 pl-2">Educational</a>
 							</li>
 							<li class="rounded hover:bg-gray-200">
-								<a href="#" class="block py-2 pl-2">Photography</a>
-							</li>
-							<li class="rounded hover:bg-gray-200">
 								<a href="#" class="block py-2 pl-2">Home Theater</a>
 							</li>
 							<li class="rounded hover:bg-gray-200">
-								<a href="#" class="block py-2 pl-2">Vehicle</a></l
-							i>
+								<a href="#" class="block py-2 pl-2">Photography</a>
+							</li>
+							<li class="rounded hover:bg-gray-200">
+								<a href="#" class="block py-2 pl-2">Software</a>
+							</li>
+							<li class="rounded hover:bg-gray-200">
+								<a href="#" class="block py-2 pl-2">Vehicle</a>
+							</li>
 						</ul>
 					</div>
 					{{-- Price Range --}}
@@ -243,9 +246,23 @@
 						</div>
 					</div>
 					{{-- Items List Body --}}
-					<div class="bg-white shadow rounded h-36">
-						Items Here
+					<div class="">
+						<div class="flex flex-wrap -mx-2">
+							<div class="w-full lg:w-1/3 px-2 mb-4">
+								<div class="bg-white shadow rounded h-36">1</div>
+							</div>
+							<div class="w-full lg:w-1/3 px-2 mb-4">
+								<div class="bg-white shadow rounded h-36">2</div>
+							</div>
+							<div class="w-full lg:w-1/3 px-2 mb-4">
+								<div class="bg-white shadow rounded h-36">3</div>
+							</div>
+							<div class="w-full lg:w-1/3 px-2 mb-4">
+								<div class="bg-white shadow rounded h-36">4</div>
+							</div>
+						</div>
 					</div>
+					
 				</div>
 			</div>
 		</div>
