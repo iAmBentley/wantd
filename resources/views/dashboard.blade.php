@@ -26,7 +26,7 @@
 		<div class="lg:px-8 max-w-7xl mx-auto px-4 py-6">
 			<div class="flex flex-wrap">
 				<div class="lg:w-3/4 w-full lg:pr-6 mb-8">
-					<h3 class="text-gray-800 text-xl font-bold ml-1 pb-4">Your Recent Items</h3>
+					<h3 class="font-header text-gray-800 text-xl font-bold ml-1 pb-4">Your Recent Items</h3>
 					<div class="flex flex-col">
 						<div class="">
 							<div class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200">
@@ -130,7 +130,7 @@
 				</div>
 				<div class="lg:w-1/4 w-full">
 					<div class="mb-8">
-						<h3 class="text-gray-800 text-xl font-bold ml-1 pb-4">Upcoming Events</h3>
+						<h3 class="font-header text-gray-800 text-xl font-bold ml-1 pb-4">Upcoming Events</h3>
 						<div class="align-middle inline-block min-w-full shadow bg-white overflow-hidden sm:rounded-lg border-b border-gray-200">
 							<div class="px-4 py-4 whitespace-no-wrap border-b border-gray-200 tracking-wide">
 								<p class="font-bold text-sm leading-5 text-gray-900 hover:text-gray-500">
@@ -154,7 +154,7 @@
 						</div>
 					</div>
 					<div class="mb-8">
-						<h3 class="text-gray-800 text-xl font-bold ml-1 pb-4">Recent Groups</h3>
+						<h3 class="font-header text-gray-800 text-xl font-bold ml-1 pb-4">Recent Groups</h3>
 						<div class="align-middle inline-block min-w-full shadow bg-white overflow-hidden sm:rounded-lg border-b border-gray-200">
 							<div class="px-4 py-4 whitespace-no-wrap border-b border-gray-200 tracking-wide">
 								<p class="font-bold text-sm leading-5 text-gray-900 hover:text-gray-500">
