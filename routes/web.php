@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::middleware(['web'])->group(function () {
+Route::middleware(['auth'])->group(function () {
 	// DASHBOARD ROUTES
 	Route::get('dashboard', 'DashboardController@index')->name('dashboard');
 	// ITEM ROUTES
