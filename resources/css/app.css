@@ -1,64 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Ubuntu:400,400i,700,700i&display=swap');
 
-/**
- * This injects Tailwind's base styles, which is a combination of
- * Normalize.css and some additional base styles.
- *
- * You can see the styles here:
- * https://unpkg.com/tailwindcss/dist/base.css
- *
- * If using `postcss-import`, use this import instead:
- *
- * @import "tailwindcss/base";
- */
 @tailwind base;
-
-/**
- * This injects any component classes registered by plugins.
- *
- * If using `postcss-import`, use this import instead:
- *
- * @import "tailwindcss/components";
- */
 @tailwind components;
-
 /**
  * Here you would add any of your custom component classes; stuff that you'd
  * want loaded *before* the utilities so that the utilities could still
  * override them.
  *
  * Example:
- *
  * .btn { ... }
  * .form-input { ... }
- *
- * Or if using a preprocessor or `postcss-import`:
- *
- * @import "components/buttons";
- * @import "components/forms";
  */
-
-/**
- * This injects all of Tailwind's utility classes, generated based on your
- * config file.
- *
- * If using `postcss-import`, use this import instead:
- *
- * @import "tailwindcss/utilities";
- */
+ 
 @tailwind utilities;
 
-/**
- * Here you would add any custom utilities you need that don't come out of the
- * box with Tailwind.
- *
- * Example :
- *
- * .bg-pattern-graph-paper { ... }
- * .skew-45 { ... }
- *
- * Or if using a preprocessor or `postcss-import`:
- *
- * @import "utilities/background-patterns";
- * @import "utilities/skew-transforms";
- */
+/* ITEM LISTING CARD - Image Overlay on Hover */
+.overlay, .overlay div { @apply hidden; }
+
+.image:hover .overlay {
+	@apply inline-block absolute bg-gray-800 h-full opacity-50 rounded-md top-0 w-full;
+}
+
+.image:hover .overlay div {
+	@apply absolute block bottom-0 p-4 text-white;
+}
+/* END --- ITEM LISTING CARD - Image Overlay on Hover */
