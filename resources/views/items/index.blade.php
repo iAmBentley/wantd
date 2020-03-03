@@ -249,7 +249,39 @@
 					<div class="">
 						<div class="flex flex-wrap -mx-2">
 							<div class="w-full lg:w-1/3 px-2 mb-4">
-								<div class="bg-white shadow rounded h-36">1</div>
+								<div class="bg-white shadow rounded-md">
+									<div>
+										<div class="image relative">
+											<img class="h-48 w-full object-cover rounded-md" src="https://images.unsplash.com/photo-1504274066651-8d31a536b11a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" alt="Sunset in the mountains">
+											
+											<div class="overlay">
+												<div>
+													<div class="flex justify-around">
+														<a href="#" class="content-end">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M14.9998 12C14.9998 13.6569 13.6566 15 11.9998 15C10.3429 15 8.99976 13.6569 8.99976 12C8.99976 10.3431 10.3429 9 11.9998 9C13.6566 9 14.9998 10.3431 14.9998 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M2.45801 12C3.73228 7.94288 7.52257 5 12.0002 5C16.4778 5 20.2681 7.94291 21.5424 12C20.2681 16.0571 16.4778 19 12.0002 19C7.52256 19 3.73226 16.0571 2.45801 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+															</svg>
+														</a>
+														<a href="#" class="content-end">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M14.9998 12C14.9998 13.6569 13.6566 15 11.9998 15C10.3429 15 8.99976 13.6569 8.99976 12C8.99976 10.3431 10.3429 9 11.9998 9C13.6566 9 14.9998 10.3431 14.9998 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M2.45801 12C3.73228 7.94288 7.52257 5 12.0002 5C16.4778 5 20.2681 7.94291 21.5424 12C20.2681 16.0571 16.4778 19 12.0002 19C7.52256 19 3.73226 16.0571 2.45801 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+															</svg>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="p-4">
+										<div class="font-bold leading-tight text-xl mb-4 text-gray-800">
+											<a href="#">Acratech Arca-Type Quick-Release Plate for Nikon D5200</a>
+										</div>
+										<div class="flex justify-between text-sm text-gray-400">
+											<span><a href="">Photography</a></span>
+											<span>$19.99</span>
+										</div>
+									</div>
+								</div>
 							</div>
 							<div class="w-full lg:w-1/3 px-2 mb-4">
 								<div class="bg-white shadow rounded h-36">2</div>
