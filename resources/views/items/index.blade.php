@@ -18,7 +18,7 @@
 		<div class="lg:px-8 max-w-7xl mx-auto px-4 py-6 lg:py-4">
 			<div class="flex flex-wrap">
 				{{-- Sidebar --}}
-				<div class="lg:mt-2 lg:pr-6 lg:w-1/4 w-full">
+				<div class="md:mt-2 md:pr-6 md:w-1/4 w-full">
 					<h3 class="font-header text-gray-800 text-xl font-bold ml-1 pb-4">Filters</h3>
 					{{-- Categories --}}
 					<div class="ml-1 text-gray-600 mb-6">
@@ -194,7 +194,7 @@
 					</div>
 				</div>
 				{{-- Items List --}}
-				<div class="lg:w-3/4 w-full">
+				<div class="md:w-3/4 w-full">
 					{{-- Items List Header --}}
 					<div class="flex justify-between items-center mb-2">
 						<h3 class="font-header text-gray-800 text-xl font-bold">
@@ -245,26 +245,48 @@
 							</div>
 						</div>
 					</div>
-					{{-- Items List Body --}}
-					<div class="">
-						<div class="flex flex-wrap -mx-2">
-							<div class="w-full lg:w-1/3 px-2 mb-4">
-								<div class="bg-white shadow rounded-md">
+					{{-- Items List Cards --}}
+					<div>
+						<div class="flex flex-wrap flex-none -mx-2">
+							{{-- Item Card --}}
+							<div class="item flex flex-initial w-full md:w-1/2 lg:w-1/3 px-2 mb-4">
+								<div class="bg-white shadow rounded-md relative">
+									{{-- Item Card Body - See app.css for additional styles --}}
 									<div>
 										<div class="image relative">
 											<img class="h-48 w-full object-cover rounded-md" src="https://images.unsplash.com/photo-1504274066651-8d31a536b11a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" alt="Sunset in the mountains">
 											
-											<div class="overlay">
-												<div>
-													<div class="flex justify-around">
-														<a href="#" class="content-end">
-															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<div class="overlay"> 
+												<div class="px-2">
+													{{-- View Button --}}
+													<div class="pb-3">
+														<a href="#" class="p-4 hover:bg-gray-600 rounded">
+															<svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<path d="M14.9998 12C14.9998 13.6569 13.6566 15 11.9998 15C10.3429 15 8.99976 13.6569 8.99976 12C8.99976 10.3431 10.3429 9 11.9998 9C13.6566 9 14.9998 10.3431 14.9998 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M2.45801 12C3.73228 7.94288 7.52257 5 12.0002 5C16.4778 5 20.2681 7.94291 21.5424 12C20.2681 16.0571 16.4778 19 12.0002 19C7.52256 19 3.73226 16.0571 2.45801 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 															</svg>
 														</a>
-														<a href="#" class="content-end">
-															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M14.9998 12C14.9998 13.6569 13.6566 15 11.9998 15C10.3429 15 8.99976 13.6569 8.99976 12C8.99976 10.3431 10.3429 9 11.9998 9C13.6566 9 14.9998 10.3431 14.9998 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M2.45801 12C3.73228 7.94288 7.52257 5 12.0002 5C16.4778 5 20.2681 7.94291 21.5424 12C20.2681 16.0571 16.4778 19 12.0002 19C7.52256 19 3.73226 16.0571 2.45801 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+													</div>
+													{{-- Edit Button --}}
+													<div class="pb-3">
+														<a href="#" class="p-4 hover:bg-gray-600 rounded">
+															<svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.2322 5.23223L18.7677 8.76777M16.7322 3.73223C17.7085 2.75592 19.2914 2.75592 20.2677 3.73223C21.244 4.70854 21.244 6.29146 20.2677 7.26777L6.5 21.0355H3V17.4644L16.7322 3.73223Z"/>
+															</svg>
+														</a>
+													</div>
+													{{-- Shop Button --}}
+													<div class="pb-3">
+														<a href="#" class="p-4 hover:bg-gray-600 rounded">
+															<svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+																<path d="M17 16a3 3 0 1 1-2.83 2H9.83a3 3 0 1 1-5.62-.1A3 3 0 0 1 5 12V4H3a1 1 0 1 1 0-2h3a1 1 0 0 1 1 1v1h14a1 1 0 0 1 .9 1.45l-4 8a1 1 0 0 1-.9.55H5a1 1 0 0 0 0 2h12zM7 12h9.38l3-6H7v6zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+															</svg>
+														</a>
+													</div>
+													{{-- Delete Button --}}
+													<div class="pb-3">
+														<a href="#" class="p-4 hover:bg-gray-600 rounded">
+															<svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7L18.1327 19.1425C18.0579 20.1891 17.187 21 16.1378 21H7.86224C6.81296 21 5.94208 20.1891 5.86732 19.1425L5 7M10 11V17M14 11V17M15 7V4C15 3.44772 14.5523 3 14 3H10C9.44772 3 9 3.44772 9 4V7M4 7H20"/>
 															</svg>
 														</a>
 													</div>
@@ -272,6 +294,181 @@
 											</div>
 										</div>
 									</div>
+									{{-- Item Card Footer --}}
+									<div class="p-4">
+										<div class="font-bold leading-tight text-xl mb-4 text-gray-800">
+											<a href="#">Acratech Arca-Type Quick-Release Plate</a>
+										</div>
+										<div class="flex justify-between text-sm text-gray-400">
+											<span><a href="">Photography</a></span>
+											<span>$19.99</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							{{-- Item Card --}}
+							<div class="item flex flex-initial w-full md:w-1/2 lg:w-1/3 px-2 mb-4">
+								<div class="bg-white shadow rounded-md">
+									{{-- Item Card Body - See app.css for additional styles --}}
+									<div>
+										<div class="image relative">
+											<img class="h-48 w-full object-cover rounded-md" src="https://images.unsplash.com/photo-1569411032431-07598b0012c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80" alt="Sunset in the mountains">
+											
+											<div class="overlay"> 
+												<div class="px-2">
+													{{-- View Button --}}
+													<div class="pb-3">
+														<a href="#" class="p-4 hover:bg-gray-600 rounded">
+															<svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M14.9998 12C14.9998 13.6569 13.6566 15 11.9998 15C10.3429 15 8.99976 13.6569 8.99976 12C8.99976 10.3431 10.3429 9 11.9998 9C13.6566 9 14.9998 10.3431 14.9998 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M2.45801 12C3.73228 7.94288 7.52257 5 12.0002 5C16.4778 5 20.2681 7.94291 21.5424 12C20.2681 16.0571 16.4778 19 12.0002 19C7.52256 19 3.73226 16.0571 2.45801 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+															</svg>
+														</a>
+													</div>
+													{{-- Edit Button --}}
+													<div class="pb-3">
+														<a href="#" class="p-4 hover:bg-gray-600 rounded">
+															<svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.2322 5.23223L18.7677 8.76777M16.7322 3.73223C17.7085 2.75592 19.2914 2.75592 20.2677 3.73223C21.244 4.70854 21.244 6.29146 20.2677 7.26777L6.5 21.0355H3V17.4644L16.7322 3.73223Z"/>
+															</svg>
+														</a>
+													</div>
+													{{-- Shop Button --}}
+													<div class="pb-3">
+														<a href="#" class="p-4 hover:bg-gray-600 rounded">
+															<svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+																<path d="M17 16a3 3 0 1 1-2.83 2H9.83a3 3 0 1 1-5.62-.1A3 3 0 0 1 5 12V4H3a1 1 0 1 1 0-2h3a1 1 0 0 1 1 1v1h14a1 1 0 0 1 .9 1.45l-4 8a1 1 0 0 1-.9.55H5a1 1 0 0 0 0 2h12zM7 12h9.38l3-6H7v6zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+															</svg>
+														</a>
+													</div>
+													{{-- Delete Button --}}
+													<div class="pb-3">
+														<a href="#" class="p-4 hover:bg-gray-600 rounded">
+															<svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7L18.1327 19.1425C18.0579 20.1891 17.187 21 16.1378 21H7.86224C6.81296 21 5.94208 20.1891 5.86732 19.1425L5 7M10 11V17M14 11V17M15 7V4C15 3.44772 14.5523 3 14 3H10C9.44772 3 9 3.44772 9 4V7M4 7H20"/>
+															</svg>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									{{-- Item Card Footer --}}
+									<div class="p-4">
+										<div class="font-bold leading-tight text-xl mb-4 text-gray-800">
+											<a href="#">Apple Watch w/ GPS, 40mm Space Gray Aluminum Case with Anchor Gray Sport Loop</a>
+										</div>
+										<div class="flex justify-between text-sm text-gray-400">
+											<span><a href="">Bike Stuff</a></span>
+											<span>$399.99</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							{{-- Item Card --}}
+							<div class="item flex flex-initial w-full md:w-1/2 lg:w-1/3 px-2 mb-4">
+								<div class="bg-white shadow rounded-md">
+									{{-- Item Card Body - See app.css for additional styles --}}
+									<div>
+										<div class="image relative">
+											<img class="h-48 w-full object-cover rounded-md" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="Sunset in the mountains">
+											
+											<div class="overlay"> 
+												<div class="px-2">
+													{{-- View Button --}}
+													<div class="pb-3">
+														<a href="#" class="p-4 hover:bg-gray-600 rounded">
+															<svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M14.9998 12C14.9998 13.6569 13.6566 15 11.9998 15C10.3429 15 8.99976 13.6569 8.99976 12C8.99976 10.3431 10.3429 9 11.9998 9C13.6566 9 14.9998 10.3431 14.9998 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M2.45801 12C3.73228 7.94288 7.52257 5 12.0002 5C16.4778 5 20.2681 7.94291 21.5424 12C20.2681 16.0571 16.4778 19 12.0002 19C7.52256 19 3.73226 16.0571 2.45801 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+															</svg>
+														</a>
+													</div>
+													{{-- Edit Button --}}
+													<div class="pb-3">
+														<a href="#" class="p-4 hover:bg-gray-600 rounded">
+															<svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.2322 5.23223L18.7677 8.76777M16.7322 3.73223C17.7085 2.75592 19.2914 2.75592 20.2677 3.73223C21.244 4.70854 21.244 6.29146 20.2677 7.26777L6.5 21.0355H3V17.4644L16.7322 3.73223Z"/>
+															</svg>
+														</a>
+													</div>
+													{{-- Shop Button --}}
+													<div class="pb-3">
+														<a href="#" class="p-4 hover:bg-gray-600 rounded">
+															<svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+																<path d="M17 16a3 3 0 1 1-2.83 2H9.83a3 3 0 1 1-5.62-.1A3 3 0 0 1 5 12V4H3a1 1 0 1 1 0-2h3a1 1 0 0 1 1 1v1h14a1 1 0 0 1 .9 1.45l-4 8a1 1 0 0 1-.9.55H5a1 1 0 0 0 0 2h12zM7 12h9.38l3-6H7v6zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+															</svg>
+														</a>
+													</div>
+													{{-- Delete Button --}}
+													<div class="pb-3">
+														<a href="#" class="p-4 hover:bg-gray-600 rounded">
+															<svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7L18.1327 19.1425C18.0579 20.1891 17.187 21 16.1378 21H7.86224C6.81296 21 5.94208 20.1891 5.86732 19.1425L5 7M10 11V17M14 11V17M15 7V4C15 3.44772 14.5523 3 14 3H10C9.44772 3 9 3.44772 9 4V7M4 7H20"/>
+															</svg>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									{{-- Item Card Footer --}}
+									<div class="p-4">
+										<div class="font-bold leading-tight text-xl mb-4 text-gray-800">
+											<a href="#">Focal Elegia Circumaural Closed-Back Audiophile Headphones</a>
+										</div>
+										<div class="flex justify-between text-sm text-gray-400">
+											<span><a href="">Audio</a></span>
+											<span>$899.99</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							{{-- Item Card --}}
+							<div class="item flex flex-initial w-full md:w-1/2 lg:w-1/3 px-2 mb-4">
+								<div class="bg-white shadow rounded-md">
+									{{-- Item Card Body - See app.css for additional styles --}}
+									<div>
+										<div class="image relative">
+											<img class="h-48 w-full object-cover rounded-md" src="https://images.unsplash.com/photo-1491637639811-60e2756cc1c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=969&q=80" alt="Sunset in the mountains">
+											
+											<div class="overlay"> 
+												<div class="px-2">
+													{{-- View Button --}}
+													<div class="pb-3">
+														<a href="#" class="p-4 hover:bg-gray-600 rounded">
+															<svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M14.9998 12C14.9998 13.6569 13.6566 15 11.9998 15C10.3429 15 8.99976 13.6569 8.99976 12C8.99976 10.3431 10.3429 9 11.9998 9C13.6566 9 14.9998 10.3431 14.9998 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M2.45801 12C3.73228 7.94288 7.52257 5 12.0002 5C16.4778 5 20.2681 7.94291 21.5424 12C20.2681 16.0571 16.4778 19 12.0002 19C7.52256 19 3.73226 16.0571 2.45801 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+															</svg>
+														</a>
+													</div>
+													{{-- Edit Button --}}
+													<div class="pb-3">
+														<a href="#" class="p-4 hover:bg-gray-600 rounded">
+															<svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.2322 5.23223L18.7677 8.76777M16.7322 3.73223C17.7085 2.75592 19.2914 2.75592 20.2677 3.73223C21.244 4.70854 21.244 6.29146 20.2677 7.26777L6.5 21.0355H3V17.4644L16.7322 3.73223Z"/>
+															</svg>
+														</a>
+													</div>
+													{{-- Shop Button --}}
+													<div class="pb-3">
+														<a href="#" class="p-4 hover:bg-gray-600 rounded">
+															<svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+																<path d="M17 16a3 3 0 1 1-2.83 2H9.83a3 3 0 1 1-5.62-.1A3 3 0 0 1 5 12V4H3a1 1 0 1 1 0-2h3a1 1 0 0 1 1 1v1h14a1 1 0 0 1 .9 1.45l-4 8a1 1 0 0 1-.9.55H5a1 1 0 0 0 0 2h12zM7 12h9.38l3-6H7v6zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+															</svg>
+														</a>
+													</div>
+													{{-- Delete Button --}}
+													<div class="pb-3">
+														<a href="#" class="p-4 hover:bg-gray-600 rounded">
+															<svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7L18.1327 19.1425C18.0579 20.1891 17.187 21 16.1378 21H7.86224C6.81296 21 5.94208 20.1891 5.86732 19.1425L5 7M10 11V17M14 11V17M15 7V4C15 3.44772 14.5523 3 14 3H10C9.44772 3 9 3.44772 9 4V7M4 7H20"/>
+															</svg>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									{{-- Item Card Footer --}}
 									<div class="p-4">
 										<div class="font-bold leading-tight text-xl mb-4 text-gray-800">
 											<a href="#">Acratech Arca-Type Quick-Release Plate for Nikon D5200</a>
@@ -282,15 +479,6 @@
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="w-full lg:w-1/3 px-2 mb-4">
-								<div class="bg-white shadow rounded h-36">2</div>
-							</div>
-							<div class="w-full lg:w-1/3 px-2 mb-4">
-								<div class="bg-white shadow rounded h-36">3</div>
-							</div>
-							<div class="w-full lg:w-1/3 px-2 mb-4">
-								<div class="bg-white shadow rounded h-36">4</div>
 							</div>
 						</div>
 					</div>

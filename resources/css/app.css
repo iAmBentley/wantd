@@ -15,13 +15,20 @@
 @tailwind utilities;
 
 /* ITEM LISTING CARD - Image Overlay on Hover */
+.image img {
+	filter: grayscale(100%);
+}
+
 .overlay, .overlay div { @apply hidden; }
 
 .image:hover .overlay {
-	@apply inline-block absolute bg-gray-800 h-full opacity-50 rounded-md top-0 w-full;
+	background-color: rgba(37,47,63,0.5);
+	@apply inline-block absolute h-full rounded-md top-0 w-full;
 }
 
 .image:hover .overlay div {
-	@apply absolute block bottom-0 p-4 text-white;
+	@apply flex justify-around items-end h-48 text-white;
 }
+
+
 /* END --- ITEM LISTING CARD - Image Overlay on Hover */
