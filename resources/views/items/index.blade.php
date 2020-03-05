@@ -5,12 +5,12 @@
 		<div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 lg:py-8">
 			<div class="flex justify-between items-center">
 				<h1 class="font-header ml-1 text-3xl text-gray-900 font-bold">Items</h1>
-				<button @keydown.window.escape="open = false" @click.away="open = false" type="button" title="Add New Item" class="inline-flex items-center px-2 py-2 md:px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-gray-600 hover:bg-gray-500 focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition ease-in-out duration-150">
+				<a href="{{ route('items.create') }}" class="inline-flex items-center px-2 py-2 md:px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-gray-600 hover:bg-gray-500 focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition ease-in-out duration-150">
 					<svg class="md:-ml-1 md:mr-2 h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
 						<path d="M17 11a1 1 0 0 1 0 2h-4v4a1 1 0 0 1-2 0v-4H7a1 1 0 0 1 0-2h4V7a1 1 0 0 1 2 0v4h4z"/>
 					</svg>
 					<span class="hidden md:inline-block">Add Item</span>
-				</button>
+				</a>
 			</div>
 		</div>
 	</header>
