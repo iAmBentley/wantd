@@ -4,7 +4,7 @@
 <header class="bg-gray-300">
 		<div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 lg:py-8">
 			<div class="flex justify-between items-center">
-				<h1 class="font-header ml-1 text-3xl text-gray-900 font-bold">Add Item</h1>
+				<h1 class="font-header ml-1 text-3xl text-gray-900 font-bold">Edit Item</h1>
 				<div class="hidden">
 					<a href="{{ route('items.create') }}" class="border border-gray-400 duration-150 ease-in-out font-medium hover:border-gray-800 hover:text-gray-800 inline-flex items-center leading-5 md:px-4 px-2 py-2 rounded-md text-gray-400 text-sm transition">
 						<svg class="md:-ml-1 md:mr-2 h-5 w-5" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -27,7 +27,7 @@
 			<form>
 				<div class="flex flex-wrap justify-between">
 					{{-- IMAGE SIDE --}}
-					<div class="w-full md:w-1/4 md:pr-6 mb-8 mb:mb-0">
+					<div class="w-full md:w-1/4 md:pr-6 mb-8 md:mb-0">
 						<div>
 							<img class="w-full object-cover rounded-md" src="https://images.unsplash.com/photo-1495121553079-4c61bcce1894?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=629&q=80" alt="Sunset in the mountains">
 							<button type="button" class="py-2 px-3 w-full mt-4 border border-gray-300 rounded-md text-sm leading-4 font-medium text-gray-700 hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800 transition duration-150 ease-in-out">
@@ -76,7 +76,7 @@
 									<label for="url" class="block text-sm font-medium leading-5 text-gray-700">Item URL</label>
 									<div class="mt-2 flex rounded-md shadow-sm">
 										<div class="relative flex-grow focus-within:z-10">
-											<input id="url" class="form-input block w-full rounded-none rounded-l-md transition ease-in-out duration-150 sm:text-sm sm:leading-5" placeholder="www.amazon.com/product-name" />
+											<input id="url" class="form-input block w-full rounded-none rounded-l-md transition ease-in-out duration-150 sm:text-sm sm:leading-5" placeholder="www.amazon.com/product-name" value="https://www.amazon.com/Apple-Watch-GPS-40mm-Aluminum/dp/B07XR5TRSZ" />
 										</div>
 										<button class="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5 font-medium rounded-r-md text-gray-700 bg-gray-50 hover:text-gray-500 hover:bg-white focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150">
 											<svg class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24">
@@ -93,7 +93,7 @@
 									Name
 								</label>
 								<div class="mt-1 rounded-md shadow-sm">
-									<input id="name" class="form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
+									<input id="name" class="form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" value="Apple Watch w/ GPS, 40mm Space Gray Aluminum Case with Anchor Gray Sport Loop"/>
 								</div>
 							</div>
 							{{-- BRAND FIELD --}}
@@ -102,7 +102,7 @@
 									Brand
 								</label>
 								<div class="mt-1 rounded-md shadow-sm">
-									<input id="brand" class="form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
+									<input id="brand" class="form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" value="Apple"/>
 								</div>
 							</div>
 							{{-- SIZE FIELD --}}
@@ -111,7 +111,7 @@
 									Size
 								</label>
 								<div class="mt-1 rounded-md shadow-sm">
-									<input id="size" class="form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
+									<input id="size" class="form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" value="40mm" />
 								</div>
 							</div>
 							{{-- COLOR FIELD --}}
@@ -120,7 +120,7 @@
 									Color
 								</label>
 								<div class="mt-1 rounded-md shadow-sm">
-									<input id="color" class="form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
+									<input id="color" class="form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" value="Space Gray"/>
 								</div>
 							</div>
 							{{-- CATEGORY SELECT FIELD --}}
@@ -130,7 +130,7 @@
 								</label>
 								<div class="mt-1 rounded-md shadow-sm">
 									<select id="country" class="form-select block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5">
-										<option>Choose One...</option>
+										<option>Bike Stuff</option>
 										<option>Audio</option>
 										<option>Bike Stuff</option>
 										<option>Computer</option>
@@ -152,7 +152,7 @@
 									Price
 								</label>
 								<div class="mt-1 rounded-md shadow-sm">
-									<input id="price" class="form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
+									<input id="price" class="form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" value="399.99" />
 								</div>
 							</div>
 							{{-- DESCRIPTION FIELD --}}
@@ -161,7 +161,7 @@
 									Description
 								</label>
 								<div class="mt-1 rounded-md shadow-sm">
-									<textarea id="description" rows="3" class="form-textarea block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"></textarea>
+									<textarea id="description" rows="3" class="form-textarea block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5">Built-in GPS, GLONASS, Galileo, and QZSS, S5 with 64-bit dual-core processor, W3 Apple wireless chip, Barometric altimeter, Capacity 32GB, Optical heart sensor, Electrical heart sensor, Improved accelerometer up to 32 g‑forces, Improved gyroscope, Ambient light sensor, LTPO OLED Always-On Retina display with Force Touch (1000 nits), Digital Crown with haptic feedback, Louder speaker, Ion-X strengthened glass, Sapphire crystal and ceramic back, Wi-Fi 802.11b/g/n 2.4GHz, Bluetooth 5.0, Built-in rechargeable lithium-ion battery, Up to 18 hours of battery life, Water resistant 50 meters, watchOS 5</textarea>
 								</div>
 							</div>
 							{{-- NOTES FIELD --}}
@@ -185,7 +185,7 @@
 						</span>
 						<span class="ml-3 inline-flex rounded-md shadow-sm">
 							<button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-gray-600 hover:bg-gray-500 focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out">
-								Add
+								Save Changes
 							</button>
 						</span>
 					</div>
