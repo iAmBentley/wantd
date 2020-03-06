@@ -4,7 +4,7 @@
 <header class="bg-gray-300">
 		<div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 lg:py-8">
 			<div class="flex justify-between items-center">
-				<h1 class="font-header ml-1 text-3xl text-gray-900 font-bold">Edit Item</h1>
+				<h1 class="ml-1">Edit Item</h1>
 				<div class="hidden">
 					<a href="{{ route('items.create') }}" class="border border-gray-400 duration-150 ease-in-out font-medium hover:border-gray-800 hover:text-gray-800 inline-flex items-center leading-5 md:px-4 px-2 py-2 rounded-md text-gray-400 text-sm transition">
 						<svg class="md:-ml-1 md:mr-2 h-5 w-5" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
