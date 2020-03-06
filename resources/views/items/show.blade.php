@@ -4,190 +4,114 @@
 <header class="bg-gray-300">
 		<div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 lg:py-8">
 			<div class="flex justify-between items-center">
-				<h1 class="font-header ml-1 text-3xl text-gray-900 font-bold">Item</h1>
+				<h1 class="ml-1">Item</h1>
 			</div>
 		</div>
 	</header>
 	<main>
-		<div class="lg:px-8 max-w-7xl mx-auto px-4 py-6">
+		<div class="lg:px-8 max-w-7xl mx-auto px-4 py-6 mb-16">
 			<div class="flex flex-wrap justify-between">
 				{{-- IMAGE SIDE --}}
 				<div class="w-full md:w-1/3 md:pr-6 mb-8 md:mb-0">
-					<div>
-						<img class="w-full object-cover rounded-md" src="https://images.unsplash.com/photo-1495121553079-4c61bcce1894?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=629&q=80" alt="Sunset in the mountains">
-						
-						<button type="button" class="py-2 px-3 w-1/2 mt-4 border border-gray-300 rounded-md text-sm leading-4 font-medium text-gray-700 hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800 transition duration-150 ease-in-out">
-							Buy Now
-						</button>
-						
-						<div class="w-1/2 mt-4 flex justify-evenly">
-							<span class="text-gray-300 hover:text-gray-600">
-								<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-									<path d="M5.13259 17.8092C3.98557 18.4376 2.64499 17.4226 2.86405 16.0916L3.60266 11.6037L0.473862 8.42541C-0.454092 7.48276 0.0579647 5.84042 1.34037 5.64622L5.66426 4.99145L7.59797 0.908259C8.17147 -0.302753 9.82852 -0.302753 10.402 0.908259L12.3357 4.99145L16.6596 5.64622C17.942 5.84042 18.4541 7.48276 17.5261 8.42541L14.3973 11.6037L15.1359 16.0916C15.355 17.4226 14.0144 18.4376 12.8674 17.8092L9 15.6903L5.13259 17.8092Z" />
-								</svg>
-							</span>
-							<span class="text-gray-300 hover:text-gray-600">
-								<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-									<path d="M5.13259 17.8092C3.98557 18.4376 2.64499 17.4226 2.86405 16.0916L3.60266 11.6037L0.473862 8.42541C-0.454092 7.48276 0.0579647 5.84042 1.34037 5.64622L5.66426 4.99145L7.59797 0.908259C8.17147 -0.302753 9.82852 -0.302753 10.402 0.908259L12.3357 4.99145L16.6596 5.64622C17.942 5.84042 18.4541 7.48276 17.5261 8.42541L14.3973 11.6037L15.1359 16.0916C15.355 17.4226 14.0144 18.4376 12.8674 17.8092L9 15.6903L5.13259 17.8092Z" />
-								</svg>
-							</span>
-							<span class="text-gray-300 hover:text-gray-600">
-								<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-									<path d="M5.13259 17.8092C3.98557 18.4376 2.64499 17.4226 2.86405 16.0916L3.60266 11.6037L0.473862 8.42541C-0.454092 7.48276 0.0579647 5.84042 1.34037 5.64622L5.66426 4.99145L7.59797 0.908259C8.17147 -0.302753 9.82852 -0.302753 10.402 0.908259L12.3357 4.99145L16.6596 5.64622C17.942 5.84042 18.4541 7.48276 17.5261 8.42541L14.3973 11.6037L15.1359 16.0916C15.355 17.4226 14.0144 18.4376 12.8674 17.8092L9 15.6903L5.13259 17.8092Z" />
-								</svg>
-							</span>
-							<span class="text-gray-300 hover:text-gray-600">
-								<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-									<path d="M5.13259 17.8092C3.98557 18.4376 2.64499 17.4226 2.86405 16.0916L3.60266 11.6037L0.473862 8.42541C-0.454092 7.48276 0.0579647 5.84042 1.34037 5.64622L5.66426 4.99145L7.59797 0.908259C8.17147 -0.302753 9.82852 -0.302753 10.402 0.908259L12.3357 4.99145L16.6596 5.64622C17.942 5.84042 18.4541 7.48276 17.5261 8.42541L14.3973 11.6037L15.1359 16.0916C15.355 17.4226 14.0144 18.4376 12.8674 17.8092L9 15.6903L5.13259 17.8092Z" />
-								</svg>
-							</span>
-							<span class="text-gray-300 hover:text-gray-600">
-								<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-									<path d="M5.13259 17.8092C3.98557 18.4376 2.64499 17.4226 2.86405 16.0916L3.60266 11.6037L0.473862 8.42541C-0.454092 7.48276 0.0579647 5.84042 1.34037 5.64622L5.66426 4.99145L7.59797 0.908259C8.17147 -0.302753 9.82852 -0.302753 10.402 0.908259L12.3357 4.99145L16.6596 5.64622C17.942 5.84042 18.4541 7.48276 17.5261 8.42541L14.3973 11.6037L15.1359 16.0916C15.355 17.4226 14.0144 18.4376 12.8674 17.8092L9 15.6903L5.13259 17.8092Z" />
-								</svg>
-							</span>
-						</div>
-					</div>
+					<img class="w-full object-cover rounded-md" src="https://images.unsplash.com/photo-1495121553079-4c61bcce1894?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=629&q=80" alt="Sunset in the mountains">
 				</div>
 				<div class="w-full md:w-2/3">
-					<div class="grid grid-cols-1 row-gap-6 col-gap-4 sm:grid-cols-6">
-						{{-- WANTD LEVEL FIELD --}}
-						<div class="sm:col-span-1">
-							<label for="wantd_lvl" class="block text-sm leading-5 font-medium text-gray-700">
-								Want'd Level
-							</label>
-							<div class="mt-4 flex justify-evenly">
-								<span class="text-gray-300 hover:text-gray-600">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-										<path d="M5.13259 17.8092C3.98557 18.4376 2.64499 17.4226 2.86405 16.0916L3.60266 11.6037L0.473862 8.42541C-0.454092 7.48276 0.0579647 5.84042 1.34037 5.64622L5.66426 4.99145L7.59797 0.908259C8.17147 -0.302753 9.82852 -0.302753 10.402 0.908259L12.3357 4.99145L16.6596 5.64622C17.942 5.84042 18.4541 7.48276 17.5261 8.42541L14.3973 11.6037L15.1359 16.0916C15.355 17.4226 14.0144 18.4376 12.8674 17.8092L9 15.6903L5.13259 17.8092Z" />
-									</svg>
-								</span>
-								<span class="text-gray-300 hover:text-gray-600">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-										<path d="M5.13259 17.8092C3.98557 18.4376 2.64499 17.4226 2.86405 16.0916L3.60266 11.6037L0.473862 8.42541C-0.454092 7.48276 0.0579647 5.84042 1.34037 5.64622L5.66426 4.99145L7.59797 0.908259C8.17147 -0.302753 9.82852 -0.302753 10.402 0.908259L12.3357 4.99145L16.6596 5.64622C17.942 5.84042 18.4541 7.48276 17.5261 8.42541L14.3973 11.6037L15.1359 16.0916C15.355 17.4226 14.0144 18.4376 12.8674 17.8092L9 15.6903L5.13259 17.8092Z" />
-									</svg>
-								</span>
-								<span class="text-gray-300 hover:text-gray-600">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-										<path d="M5.13259 17.8092C3.98557 18.4376 2.64499 17.4226 2.86405 16.0916L3.60266 11.6037L0.473862 8.42541C-0.454092 7.48276 0.0579647 5.84042 1.34037 5.64622L5.66426 4.99145L7.59797 0.908259C8.17147 -0.302753 9.82852 -0.302753 10.402 0.908259L12.3357 4.99145L16.6596 5.64622C17.942 5.84042 18.4541 7.48276 17.5261 8.42541L14.3973 11.6037L15.1359 16.0916C15.355 17.4226 14.0144 18.4376 12.8674 17.8092L9 15.6903L5.13259 17.8092Z" />
-									</svg>
-								</span>
-								<span class="text-gray-300 hover:text-gray-600">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-										<path d="M5.13259 17.8092C3.98557 18.4376 2.64499 17.4226 2.86405 16.0916L3.60266 11.6037L0.473862 8.42541C-0.454092 7.48276 0.0579647 5.84042 1.34037 5.64622L5.66426 4.99145L7.59797 0.908259C8.17147 -0.302753 9.82852 -0.302753 10.402 0.908259L12.3357 4.99145L16.6596 5.64622C17.942 5.84042 18.4541 7.48276 17.5261 8.42541L14.3973 11.6037L15.1359 16.0916C15.355 17.4226 14.0144 18.4376 12.8674 17.8092L9 15.6903L5.13259 17.8092Z" />
-									</svg>
-								</span>
-								<span class="text-gray-300 hover:text-gray-600">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-										<path d="M5.13259 17.8092C3.98557 18.4376 2.64499 17.4226 2.86405 16.0916L3.60266 11.6037L0.473862 8.42541C-0.454092 7.48276 0.0579647 5.84042 1.34037 5.64622L5.66426 4.99145L7.59797 0.908259C8.17147 -0.302753 9.82852 -0.302753 10.402 0.908259L12.3357 4.99145L16.6596 5.64622C17.942 5.84042 18.4541 7.48276 17.5261 8.42541L14.3973 11.6037L15.1359 16.0916C15.355 17.4226 14.0144 18.4376 12.8674 17.8092L9 15.6903L5.13259 17.8092Z" />
-									</svg>
-								</span>
+					<div class="">
+						{{-- wantd level --}}
+						<div class="flex mb-1 items-center">
+							<span class="text-gray-300 hover:text-gray-600">
+								<svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path d="M5.13259 17.8092C3.98557 18.4376 2.64499 17.4226 2.86405 16.0916L3.60266 11.6037L0.473862 8.42541C-0.454092 7.48276 0.0579647 5.84042 1.34037 5.64622L5.66426 4.99145L7.59797 0.908259C8.17147 -0.302753 9.82852 -0.302753 10.402 0.908259L12.3357 4.99145L16.6596 5.64622C17.942 5.84042 18.4541 7.48276 17.5261 8.42541L14.3973 11.6037L15.1359 16.0916C15.355 17.4226 14.0144 18.4376 12.8674 17.8092L9 15.6903L5.13259 17.8092Z" />
+								</svg>
+							</span>
+							<span class="text-gray-300 hover:text-gray-600">
+								<svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path d="M5.13259 17.8092C3.98557 18.4376 2.64499 17.4226 2.86405 16.0916L3.60266 11.6037L0.473862 8.42541C-0.454092 7.48276 0.0579647 5.84042 1.34037 5.64622L5.66426 4.99145L7.59797 0.908259C8.17147 -0.302753 9.82852 -0.302753 10.402 0.908259L12.3357 4.99145L16.6596 5.64622C17.942 5.84042 18.4541 7.48276 17.5261 8.42541L14.3973 11.6037L15.1359 16.0916C15.355 17.4226 14.0144 18.4376 12.8674 17.8092L9 15.6903L5.13259 17.8092Z" />
+								</svg>
+							</span>
+							<span class="text-gray-300 hover:text-gray-600">
+								<svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path d="M5.13259 17.8092C3.98557 18.4376 2.64499 17.4226 2.86405 16.0916L3.60266 11.6037L0.473862 8.42541C-0.454092 7.48276 0.0579647 5.84042 1.34037 5.64622L5.66426 4.99145L7.59797 0.908259C8.17147 -0.302753 9.82852 -0.302753 10.402 0.908259L12.3357 4.99145L16.6596 5.64622C17.942 5.84042 18.4541 7.48276 17.5261 8.42541L14.3973 11.6037L15.1359 16.0916C15.355 17.4226 14.0144 18.4376 12.8674 17.8092L9 15.6903L5.13259 17.8092Z" />
+								</svg>
+							</span>
+							<span class="text-gray-300 hover:text-gray-600">
+								<svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path d="M5.13259 17.8092C3.98557 18.4376 2.64499 17.4226 2.86405 16.0916L3.60266 11.6037L0.473862 8.42541C-0.454092 7.48276 0.0579647 5.84042 1.34037 5.64622L5.66426 4.99145L7.59797 0.908259C8.17147 -0.302753 9.82852 -0.302753 10.402 0.908259L12.3357 4.99145L16.6596 5.64622C17.942 5.84042 18.4541 7.48276 17.5261 8.42541L14.3973 11.6037L15.1359 16.0916C15.355 17.4226 14.0144 18.4376 12.8674 17.8092L9 15.6903L5.13259 17.8092Z" />
+								</svg>
+							</span>
+							<span class="text-gray-300 hover:text-gray-600">
+								<svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path d="M5.13259 17.8092C3.98557 18.4376 2.64499 17.4226 2.86405 16.0916L3.60266 11.6037L0.473862 8.42541C-0.454092 7.48276 0.0579647 5.84042 1.34037 5.64622L5.66426 4.99145L7.59797 0.908259C8.17147 -0.302753 9.82852 -0.302753 10.402 0.908259L12.3357 4.99145L16.6596 5.64622C17.942 5.84042 18.4541 7.48276 17.5261 8.42541L14.3973 11.6037L15.1359 16.0916C15.355 17.4226 14.0144 18.4376 12.8674 17.8092L9 15.6903L5.13259 17.8092Z" />
+								</svg>
+							</span>
+						</div>
+						<h2 class="max-w-2xl leading-snug mb-2">Apple Watch w/ GPS, 40mm Space Gray Aluminum Case with Anchor Gray Sport Loop</h2>
+						<div class="mb-4 mt-3 text-gray-400">
+							<p class="inline-block mr-4">Apple • <a href="#" class="hover:text-gray-700">Bike Stuff</a></p>
+							<div class="rounded-full inline-block bg-orange-200 text-orange-800 py-1 px-4">
+								<svg class="-mt-1 h-4 inline-block w-4" fill="currentColor" viewBox="0 0 24 24">
+									<path d="M7 10V7a5 5 0 1 1 10 0v3h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h2zm2 0h6V7a3 3 0 0 0-6 0v3zm-4 2v8h14v-8H5zm7 2a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1z"/>
+								</svg>
+								Reserved
 							</div>
 						</div>
-						{{-- URL FIELD --}}
-						<div class="sm:col-span-5">
-							<div>
-								<label for="url" class="block text-sm font-medium leading-5 text-gray-700">Item URL</label>
-								<div class="mt-2 flex rounded-md shadow-sm">
-									<div class="relative flex-grow focus-within:z-10">
-										<input id="url" class="form-input block w-full rounded-none rounded-l-md transition ease-in-out duration-150 sm:text-sm sm:leading-5" placeholder="www.amazon.com/product-name" />
-									</div>
-									<button class="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5 font-medium rounded-r-md text-gray-700 bg-gray-50 hover:text-gray-500 hover:bg-white focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150">
-										<svg class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24">
-											<path d="M4 4V9H4.58152M19.9381 11C19.446 7.05369 16.0796 4 12 4C8.64262 4 5.76829							 6.06817 4.58152 9M4.58152 9H9M20 20V15H19.4185M19.4185 15C18.2317 17.9318 15.3574 20 12 20C7.92038 20 4.55399 16.9463 4.06189 13M19.4185 15H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										</svg>
-										<span class="ml-2">Fetch</span>
-									</button>
+					</div>
+					<hr>
+					<div class="mb-8 mt-4 max-w-lg">
+						<div class="grid grid-cols-1 row-gap-6 col-gap-4 sm:grid-cols-2">
+							<div class="sm:col-span-1">
+								<div class="font-bold text-lg mb-2">Space Gray</div>
+								<div class="flex items-center text-gray-400">
+									<svg class="mr-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M4 2C2.89543 2 2 2.89543 2 4V15C2 16.6569 3.34315 18 5 18C6.65685 18 8 16.6569 8 15V4C8 2.89543 7.10457 2 6 2H4ZM5 16C5.55228 16 6 15.5523 6 15C6 14.4477 5.55228 14 5 14C4.44772 14 4 14.4477 4 15C4 15.5523 4.44772 16 5 16ZM10 14.2426L14.8995 9.34308C15.6805 8.56203 15.6805 7.2957 14.8995 6.51465L13.4853 5.10044C12.7042 4.31939 11.4379 4.31939 10.6568 5.10044L10 5.75728V14.2426ZM16 18H9.07104L15.071 12H16C17.1046 12 18 12.8954 18 14V16C18 17.1046 17.1046 18 16 18Z" fill="currentColor"/>
+									</svg>
+									Color
+								</div>
+							</div>
+							<div class="sm:col-span-1">
+								<div class="font-bold text-lg mb-2">40mm</div>
+								<div class="flex items-center text-gray-400">
+									<svg class="mr-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M4 2C2.89543 2 2 2.89543 2 4V15C2 16.6569 3.34315 18 5 18C6.65685 18 8 16.6569 8 15V4C8 2.89543 7.10457 2 6 2H4ZM5 16C5.55228 16 6 15.5523 6 15C6 14.4477 5.55228 14 5 14C4.44772 14 4 14.4477 4 15C4 15.5523 4.44772 16 5 16ZM10 14.2426L14.8995 9.34308C15.6805 8.56203 15.6805 7.2957 14.8995 6.51465L13.4853 5.10044C12.7042 4.31939 11.4379 4.31939 10.6568 5.10044L10 5.75728V14.2426ZM16 18H9.07104L15.071 12H16C17.1046 12 18 12.8954 18 14V16C18 17.1046 17.1046 18 16 18Z" fill="currentColor"/>
+									</svg>
+									Size
+								</div>
+							</div>
+							<div class="sm:col-span-1">
+								<div class="font-bold text-lg mb-2">One</div>
+								<div class="flex items-center text-gray-400">
+									<svg class="mr-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M7 9C7 7.89543 7.89543 7 9 7H15C16.1046 7 17 7.89543 17 9V15C17 16.1046 16.1046 17 15 17H9C7.89543 17 7 16.1046 7 15V9Z" fill="currentColor"/><path d="M5 3C3.89543 3 3 3.89543 3 5V11C3 12.1046 3.89543 13 5 13L5 5H13C13 3.89543 12.1046 3 11 3H5Z" fill="currentColor"/>
+									</svg>
+									Quantity
+								</div>
+							</div>
+							<div class="sm:col-span-1">
+								<div class="font-bold text-lg mb-2">$399.99</div>
+								<div class="flex items-center text-gray-400">
+									<svg class="mr-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M17.7071 9.29289C18.0976 9.68342 18.0976 10.3166 17.7071 10.7071L10.7071 17.7071C10.3166 18.0976 9.68342 18.0976 9.29289 17.7071L2.29289 10.7071C2.0976 10.5118 1.99997 10.2558 2 9.99988V5C2 3.34315 3.34315 2 5 2H10.0003C10.2561 2.00007 10.5119 2.0977 10.7071 2.29289L17.7071 9.29289ZM5 6C5.55228 6 6 5.55228 6 5C6 4.44772 5.55228 4 5 4C4.44772 4 4 4.44772 4 5C4 5.55228 4.44772 6 5 6Z" fill="currentColor"/>
+									</svg>
+									Price
 								</div>
 							</div>
 						</div>
-						{{-- NAME FIELD --}}
-						<div class="sm:col-span-6">
-							<label for="name" class="block text-sm font-medium leading-5 text-gray-700">
-								Name
-							</label>
-							<div class="mt-1 rounded-md shadow-sm">
-								<input id="name" class="form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
-							</div>
-						</div>
-						{{-- BRAND FIELD --}}
-						<div class="sm:col-span-2">
-							<label for="brand" class="block text-sm font-medium leading-5 text-gray-700">
-								Brand
-							</label>
-							<div class="mt-1 rounded-md shadow-sm">
-								<input id="brand" class="form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
-							</div>
-						</div>
-						{{-- SIZE FIELD --}}
-						<div class="sm:col-span-2">
-							<label for="size" class="block text-sm font-medium leading-5 text-gray-700">
-								Size
-							</label>
-							<div class="mt-1 rounded-md shadow-sm">
-								<input id="size" class="form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
-							</div>
-						</div>
-						{{-- COLOR FIELD --}}
-						<div class="sm:col-span-2">
-							<label for="color" class="block text-sm font-medium leading-5 text-gray-700">
-								Color
-							</label>
-							<div class="mt-1 rounded-md shadow-sm">
-								<input id="color" class="form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
-							</div>
-						</div>
-						{{-- CATEGORY SELECT FIELD --}}
-						<div class="sm:col-span-2">
-							<label for="country" class="block text-sm font-medium leading-5 text-gray-700">
-								Category
-							</label>
-							<div class="mt-1 rounded-md shadow-sm">
-								<select id="country" class="form-select block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5">
-									<option>Choose One...</option>
-									<option>Audio</option>
-									<option>Bike Stuff</option>
-									<option>Computer</option>
-								</select>
-							</div>
-						</div>
-						{{-- QUANTITY FIELD --}}
-						<div class="sm:col-span-2">
-							<label for="quantity" class="block text-sm font-medium leading-5 text-gray-700">
-								Quantity
-							</label>
-							<div class="mt-1 rounded-md shadow-sm">
-								<input id="quantity" class="form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" value="1" />
-							</div>
-						</div>
-						{{-- PRICE FIELD --}}
-						<div class="sm:col-span-2">
-							<label for="price" class="block text-sm font-medium leading-5 text-gray-700">
-								Price
-							</label>
-							<div class="mt-1 rounded-md shadow-sm">
-								<input id="price" class="form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
-							</div>
-						</div>
-						{{-- DESCRIPTION FIELD --}}
-						<div class="sm:col-span-3">
-							<label for="description" class="block text-sm font-medium leading-5 text-gray-700">
-								Description
-							</label>
-							<div class="mt-1 rounded-md shadow-sm">
-								<textarea id="description" rows="3" class="form-textarea block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"></textarea>
-							</div>
-						</div>
-						{{-- NOTES FIELD --}}
-						<div class="sm:col-span-3">
-							<label for="notes" class="block text-sm font-medium leading-5 text-gray-700">
-								Notes
-							</label>
-							<div class="mt-1 rounded-md shadow-sm">
-								<textarea id="notes" rows="3" class="form-textarea block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"></textarea>
-							</div>
-						</div>
 					</div>
+					<div class="mt-6">
+						<h4>Notes</h4>
+						<hr class="mt-2 mb-4">
+						<p class="max-w-2xl leading-6 text-gray-600">This is where you would see any notes left by you or the person who the item belongs to. If there are not any notes, this will not appear and the ‘purchase’ button will be closer to the top copy.</p>
+					</div>
+					<div class="">
+						<a href="#">Buy Now</a>
+						<button type="button">Reserve</button>
+						<button type="button">Mark Purchased</button>
+					</div>
+				</div>
+				<div class="w-full mt-6">
+					<h4>Description</h4>
+					<hr class="mt-2 mb-4">
+					<p class="leading-6 text-gray-600">Built-in GPS, GLONASS, Galileo, and QZSS, S5 with 64-bit dual-core processor, W3 Apple wireless chip, Barometric altimeter, Capacity 32GB, Optical heart sensor, Electrical heart sensor, Improved accelerometer up to 32 g‑forces, Improved gyroscope, Ambient light sensor, LTPO OLED Always-On Retina display with Force Touch (1000 nits), Digital Crown with haptic feedback, Louder speaker, Ion-X strengthened glass, Sapphire crystal and ceramic back, Wi-Fi 802.11b/g/n 2.4GHz, Bluetooth 5.0, Built-in rechargeable lithium-ion battery, Up to 18 hours of battery life, Water resistant 50 meters, watchOS 5</p>
 				</div>
 			</div>
 		</div>
